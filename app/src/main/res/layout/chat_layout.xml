@@ -43,11 +43,19 @@
                 android:drawablePadding="10sp"
                 android:hint="@string/pergunte_meta_ai_ou_pesquise"
                 android:inputType="textPersonName"
-                android:padding="20sp" />
+                android:padding="20sp"
+                android:id="@+id/idPesquisa"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
     </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/idPesquisa"
+        android:layout_above="@+id/idChatBottomNav"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/idChatBottomNav"
